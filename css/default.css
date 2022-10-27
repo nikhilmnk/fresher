@@ -1,0 +1,136 @@
+/************** google fonts *************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+
+    /************** colors and global variables *************/
+    --body-bg: #f2f2f2;
+    --content-bg: #fff;
+    --text-color: #4a4a4a;
+    --text-color-2: #404040;
+    --text-footer: #fff;
+    --color-black: #000;
+    --color-white: #fff;
+    --fg-primary: #248CE3;
+    --fg-secondary: #0C5397;
+    --fg-success:#19872b ;
+    --fg-warning:#ffd607 ;
+    --fg-info: #0d99f0;
+    --fg-danger: #ed283c;
+    --fg-light: ;
+    --fg-dark: #212529;
+    --fg-link-color: #248CE3;
+    --fg-link-hover-color: #0C5397;
+    --heading-text:#2e2e2e;
+
+    --font-size-body: 18px;
+    --font-weight-body: 400;
+
+    --font-family-body: 'Poppins', sans-serif;
+    --font-family-heading: 'Poppins', sans-serif;
+    
+    --line-height-body: 1.5;
+    
+    --btn-boder-radius: 50px;
+    --btn-font:20px;
+    --btn-font-weight:500;
+
+    --img-border-radius:5px;
+    
+    --linear-grad-blue: linear-gradient(135deg, var(--fg-primary),var(--fg-secondary));
+    --linear-grad-skyblue:linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+    --linear-grad-purple:linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    --linear-grad-orangeRed:inear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    --linear-grad-orangeYel: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
+    
+}
+/************** Selectors with default values *************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: var(--font-family-body);
+    /* color: var(--heading-text); */
+}
+body{
+    line-height: var(--line-height-body);
+    scroll-behavior: smooth;
+    /* color: var(--text-color); */
+    font-size: var(--font-size-body);
+    background: var(--body-bg);
+}
+a{
+    color: var(--text-color);
+}
+h1{
+ font-size: 3rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 2.0rem;
+    
+}
+h4{
+    font-size: 1.8rem;
+}
+h5{
+    font-size: 1.5rem;
+}
+h6{
+    font-size: 1.2rem;
+}
+button{
+    border: none;
+    cursor: pointer;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/************** Classes with default values *************/
+.mrg-5{
+    margin: 5px;
+}
+.mrg-x-5{
+    margin: 5px;
+}
+.mrg-y-5{
+    margin: 5px;
+}
+.mrg-10{
+    margin: 10px;
+}
+.mrg-x-10{
+    margin: 10px;
+}
+.mrg-y-10{
+    margin: 10px;
+}
+.pd-5{
+    margin: 5px;
+}
+.pd-x-5{
+    margin: 5px;
+}
+.pd-y-5{
+    margin: 5px;
+}
+.pd-10{
+    margin: 10px;
+}
+.pd-x-10{
+    margin: 10px;
+}
+.pd-y-10{
+    margin: 10px;
+}
