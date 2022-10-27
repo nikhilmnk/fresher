@@ -1,0 +1,32 @@
+Folder Tree Structure
+
+├───adminm
+│   ├───assets
+│   ├───css
+│   ├───fonts
+│   ├───images
+│   │   ├───avatars
+│   │   └───svg-image
+│   └───js
+├───assets
+├───bootstrap
+├───css
+├───database
+├───fonts
+├───images
+│   ├───content
+│   ├───logos
+│   │   ├───png-images
+│   │   └───svg-images
+│   └───thumbnails
+├───js
+└───sitemaps
+
+
+
+------------CSS Units----------------
+vh,vw,rem,em
+Use these units only and avoid px to give size.
+
+-> Every one see the code of default.css file.
+->robots.txt file is used to block URLs to search consoles.
