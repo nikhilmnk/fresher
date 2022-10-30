@@ -1,13 +1,5 @@
 Folder Tree Structure
 
-├───adminm
-│   ├───assets
-│   ├───css
-│   ├───fonts
-│   ├───images
-│   │   ├───avatars
-│   │   └───svg-image
-│   └───js
 ├───assets
 ├───bootstrap
 ├───css
@@ -20,7 +12,6 @@ Folder Tree Structure
 │   │   └───svg-images
 │   └───thumbnails
 ├───js
-└───sitemaps
 
 
 
