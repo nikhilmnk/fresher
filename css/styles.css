@@ -1,7 +1,9 @@
-body{
+body {
   background: var(--body-bg);
 }
-header{
+
+/************** header section start ***************/
+header {
   display: flex;
   height: 70px;
   justify-content: space-between;
@@ -9,38 +11,55 @@ header{
   background: var(--content-bg);
   width: 100%;
 }
-header .logo{
+
+header .logo {
   height: 50px;
   width: 150px;
 }
-header .nav-links{
+
+header .nav-links {
   display: flex;
-  /* margin: 0 10px; */
+
 }
-header .nav-links li{
+
+header .nav-links .active, .nav-links li a:hover {
+  background: var(--linear-grad-blue);
+  color: white;
+  transition: 0.1s ease-in-out;
+}
+
+header .nav-links li {
   margin: 0 1vw;
 }
-header .nav-links li a i{
+
+header .nav-links li a {
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+header .nav-links li a i {
   margin-right: 5px;
 }
+
 header .search-container {
   background: #fff;
   height: 20px;
   border-radius: 50px;
-  /* padding: 20px; */
   margin-top: 1vh;
   margin-left: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: 0.8s;
-  
+  transition: 0.2s;
+
 }
+
 .search-container:hover>.search-input {
   width: 100px;
-  
+
 }
+
 .search-container .search-input {
   background: transparent;
   border: none;
@@ -48,30 +67,13 @@ header .search-container {
   width: 0px;
   font-weight: 500;
   font-size: 16px;
-  transition: 0.8s;
+  transition: 0.2s;
 }
 
 .search-container .search-btn .fas {
   color: var(--color-black);
 }
 
-@keyframes hoverShake {
-  0% {
-    transform: skew(0deg, 0deg);
-  }
-
-  25% {
-    transform: skew(5deg, 5deg);
-  }
-
-  75% {
-    transform: skew(-5deg, -5deg);
-  }
-
-  100% {
-    transform: skew(0deg, 0deg);
-  }
-}
 
 .search-container:hover {
   animation: hoverShake 0.15s linear 3;
@@ -89,14 +91,19 @@ header .search-container {
   display: none;
 }
 
-main{
+/************** header section end ***************/
+
+/************** Main section Start ***************/
+main {
   display: flex;
   justify-content: space-between;
 }
-main .content{
+
+main .content {
   max-width: 78vw;
 }
-main .sidebar{
+
+main .sidebar {
   width: 20vw;
   background: var(--content-bg);
   padding: 10px 10px;
@@ -104,16 +111,18 @@ main .sidebar{
 }
 
 
-
+/************** sidebar section start ***************/
 .sidebar-content {
   margin-bottom: 30px;
   color: var(--text-color);
 }
+
 .sidebar-title {
   margin-bottom: 10px;
   border-bottom: 1px solid gray;
   color: var(--text-color);
 }
+
 .sidebar .quick-links li {
   margin: 2px 0;
   color: var(--text-color);
@@ -134,8 +143,14 @@ main .sidebar{
   margin-bottom: 10px;
 }
 
+.recent-post {
+  display: flex;
+}
+
 .recent-posts .recent-post img {
   margin-right: 10px;
+  width: 5vw;
+  height: auto;
 }
 
 .recent-posts .recent-post .title {
@@ -258,82 +273,100 @@ main .sidebar{
   color: var(--color-white);
 }
 
-/* styling recent post */
-.recent-post {
-  display: flex;
-}
+
+/************** sidebar section end ***************/
+
+/************** Content section Start ***************/
 
 
 
 
+/************** Content section End ***************/
+
+/************** Main section End ***************/
 
 
-
-
-footer .row{
+/************** Footer section Start ***************/
+footer .row {
   display: flex;
   height: auto;
-  width:100%;
-  background:var( --text-color);
+  width: 100%;
+  background: var(--text-color);
 }
-.footer-col{
+
+/************** Footer column1 section Start ***************/
+.footer-col {
   border-right: 1px solid var(--body-bg);
-  padding:1px 10px 2px 15px;
+  padding: 1px 10px 2px 15px;
   flex: 24%;
   color: var(--text-footer);
 }
-.footer-col h3{
+
+.footer-col h3 {
   color: var(--text-footer);
-  margin-bottom: 2px white;
+  margin-bottom: 2px;
   border-bottom: 1px solid gray;
   max-width: auto;
   margin-bottom: 10px;
 }
-.footer-col1 .footer-para{
+
+.footer-col1 .footer-para {
   font-size: 12px;
   line-height: 1.2;
   color: var(--text-footer);
   text-align: justify;
 }
-.footer-col1 img{
+
+.footer-col1 img {
   width: 180px;
   margin-top: 10px;
 }
+
+/************** Footer column2 section Start ***************/
 .footer-col2 li {
   margin: 2px 0;
   color: var(--text-footer);
   font-size: 1.2rem;
   font-weight: 500;
 }
+
 .footer-col2 li a {
   color: var(--text-footer);
 }
+
 .footer-col2 li a i {
   margin: 0 7px;
   font-size: 16px;
 }
 
-.footer-col2 ul li a{
-  color:var(--text-footer);
+.footer-col2 ul li a {
+  color: var(--text-footer);
 }
+
+/************** Footer column3 section Start ***************/
 .footer-col3 .recent-post {
   margin-bottom: 10px;
 }
+
 .footer-col3 .recent-post img {
   margin-right: 10px;
 }
-.footer-col3 .recent-post .title p{
+
+.footer-col3 .recent-post .title p {
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
-  color:var(--text-footer);
+  color: var(--text-footer);
 }
+
 .footer-col3 .recent-post .title .detail {
   font-size: 12px;
   font-weight: 300;
-  color:var(--text-footer);
+  color: var(--text-footer);
 }
-.footer-col4 form input{
+
+/************** Footer column4 section Start ***************/
+.footer-col4 form input {
   outline: none;
   border: 1px solid var(--content-bg);
   background: var(--body-bg);
@@ -342,7 +375,8 @@ footer .row{
   width: 20vw;
   margin-bottom: 15px;
 }
-.footer-col4 button{
+
+.footer-col4 button {
   background: var(--linear-grad-blue);
   border-radius: 2px;
   padding: 5px 15px;
@@ -353,41 +387,66 @@ footer .row{
   color: var(--color-white);
 }
 
-footer .row2{
+/************** Footer row2 section Start ***************/
+footer .row2 {
   width: 100%;
-  background: #000;
+  background: var(--color-black);
   height: 30px;
   justify-content: space-between;
-  padding: 0 10px;  
+  padding: 0 10px;
 }
-footer .row2 p{ 
+
+footer .row2 p {
   color: var(--text-footer);
   font-size: 16px;
 }
-footer .row2 .links{
+
+footer .row2 .links {
   display: flex;
 }
-footer .row2 .links li a{
+
+footer .row2 .links li a {
   margin: 0 10px;
   font-size: 14px;
   color: var(--text-footer);
 }
-@media screen and (max-width: 768px){
-  main{
-    display: block;
-  }
-  main .content{
-    width: 100vw;
-  }
-  main .sidebar{
-    width: 100vw;
-  }
-  footer .row{
-    display: block;
-    width: 100%;
-    justify-content: center;
+
+/**************keyframes Start ***************/
+@keyframes hoverShake {
+  0% {
+    transform: skew(0deg, 0deg);
   }
 
+  25% {
+    transform: skew(5deg, 5deg);
+  }
+
+  75% {
+    transform: skew(-5deg, -5deg);
+  }
+
+  100% {
+    transform: skew(0deg, 0deg);
+  }
+}
+
+/************** Media query for responsive ***************/
+@media screen and (max-width: 768px) {
+
+  /************** Main section Start ***************/
+  main {
+    display: block;
+  }
+
+  main .content {
+    width: 100vw;
+  }
+
+  main .sidebar {
+    width: 100vw;
+  }
+
+  /************** Header section Start ***************/
   .hamburger {
     display: block;
     position: absolute;
@@ -396,7 +455,7 @@ footer .row2 .links li a{
     top: 5%;
     transform: translate(-5%, -50%);
     z-index: 2;
-    transition: all 0.7s ease;
+    transition: all 0.2s ease;
   }
 
   .nav-links {
@@ -408,7 +467,7 @@ footer .row2 .links li a{
     flex-direction: column;
     clip-path: circle(50px at 90% -20%);
     -webkit-clip-path: circle(50px at 90% -10%);
-    transition: all 1s ease-out;
+    transition: all 0.5s ease-out;
     pointer-events: none;
     text-align: center;
   }
@@ -423,36 +482,6 @@ footer .row2 .links li a{
     opacity: 0;
     padding: 10px;
     font-size: 22px;
-  }
-
-  .nav-links li:nth-child(1) {
-    transition: all 0.5s ease 0.2s;
-  }
-
-  .nav-links li:nth-child(2) {
-    transition: all 0.5s ease 0.4s;
-  }
-
-  .nav-links li:nth-child(3) {
-    transition: all 0.5s ease 0.6s;
-  }
-
-  .nav-links li:nth-child(4) {
-    transition: all 0.5s ease 0.7s;
-  }
-
-  .nav-links li:nth-child(5) {
-    transition: all 0.5s ease 0.8s;
-  }
-
-  .nav-links li:nth-child(6) {
-    transition: all 0.5s ease 0.9s;
-    margin: 0;
-  }
-
-  .nav-links li:nth-child(7) {
-    transition: all 0.5s ease 1s;
-    margin: 0;
   }
 
   li.fade {
@@ -473,18 +502,55 @@ footer .row2 .links li a{
   .toggle .bars3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
+
   .search-container {
     padding: 30px;
     margin: 20px;
   }
-  .search-container .search-input{
+
+  .search-container .search-input {
     width: 100%;
     margin: 20px;
   }
+
   .search-container:hover>.search-input {
     width: 100%;
   }
+
   .search-container:hover {
     animation: none;
   }
+
+  /************** Sidebar section Start ***************/
+  .recent-posts .recent-post img {
+    margin-right: 10px;
+    width: 150px;
+    height: auto;
+  }
+
+  .sidebar .search input {
+    width: 250px;
+  }
+
+  /************** Footer 1st row section Start ***************/
+  footer .row {
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /************** Footer column4 section Start ***************/
+  .footer-col4 form input {
+    width: 250px;
+    height: 40px;
+  }
+
+  /************** Footer 2nd row section Start ***************/
+  footer .row2 {
+    flex-direction: row;
+    height: auto;
+    text-align: center;
+  }
+
+
 }
